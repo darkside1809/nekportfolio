@@ -46,19 +46,25 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        Back-end developer, who consistently improving programming
+        skills. Extremely motivated to grow professionally and open to learn new
+        skills in the back-end engineering and programming overall. Confident in
+        my ability to come up with interesting ideas. Love working with people
+        to do things bigger than I could accomplish alone.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
-              final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              final={index === TOTAL_CAROUSEL_COUNT - 1}
+            >
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onClick={(e) => handleClick(e, index)}>
+                onClick={(e) => handleClick(e, index)}
+              >
                 <CarouselItemTitle>
                   {`${item.year}`}
                   <CarouselItemImg
@@ -66,7 +72,8 @@ const Timeline = () => {
                     height="6"
                     viewBox="0 0 208 6"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -81,7 +88,8 @@ const Timeline = () => {
                         y1="0.5"
                         x2="208"
                         y2="0.500295"
-                        gradientUnits="userSpaceOnUse">
+                        gradientUnits="userSpaceOnUse"
+                      >
                         <stop stop-color="white" />
                         <stop
                           offset="0.79478"
@@ -106,7 +114,8 @@ const Timeline = () => {
               index={index}
               active={activeItem}
               onClick={(e) => handleClick(e, index)}
-              type="button">
+              type="button"
+            >
               <CarouselButtonDot active={activeItem} />
             </CarouselButton>
           );
