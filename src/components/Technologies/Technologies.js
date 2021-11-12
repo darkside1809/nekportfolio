@@ -55,7 +55,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Others</ListTitle>
           <ListParagraph>
-            Experience with Wordpress (Elementor), Git, Docker, Postman, Jira,
+            Experience with Wordpress (Elementor), Git, Docker, Postman API, Jira,
           </ListParagraph>
         </ListContainer>
       </ListItem>
