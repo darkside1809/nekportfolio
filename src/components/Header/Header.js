@@ -5,10 +5,10 @@ import { GiWindyStripes } from "react-icons/gi";
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
 const Header = () => (
-  <Container>
+  <Container id="home">
     <Div1>
-      <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+      <Link href="#home">
+        <a style={{ display: "flex", alignItems: "center", color: "white", position: "fixed", zIndex: "1000" }}>
           <GiWindyStripes size="3rem" />{" "}
           <span
             style={{

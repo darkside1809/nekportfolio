@@ -8,11 +8,11 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
-    <h4>Click the card to visit</h4>
+    <h4>Click the card to visit page</h4>
     <GridContainer>
       {projects.map((p, i) => {
         return (
-          <ExternalLinks href={p.visit}>
+          <ExternalLinks href={p.visit} target='_blank'>
             <BlogCard key={i}>
               <Img src={p.image} />
               <TitleContent>

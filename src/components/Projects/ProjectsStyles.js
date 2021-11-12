@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
-`
+`;
 
 export const GridContainer = styled.section`
 display: grid;
@@ -23,11 +24,12 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   background: #0f1624;
   width: 400px;
+  padding-bottom: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -92,17 +94,14 @@ export const UtilityList = styled.ul`
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   background: #0f1624;
-
   border-radius: 15px;
-  transition: .3s ease;
+
+  transition: background 0.2s ease-in-out;
   &:hover {
-    background: #c02425;
-    background: -webkit-linear-gradient(to right, #f0cb35, #c02425);
-    background: linear-gradient(to right, #f0cb35, #c02425);
-    background-size: 120% 120%;
+    background: #d6ed17ff;
     color: #000000;
   }
 `;
