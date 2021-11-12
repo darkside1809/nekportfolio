@@ -14,6 +14,7 @@ export const LeftSection = styled.div`
     display: flex;
     flex-direction: column;
 
+    padding: 3rem 0;
     margin: 0 auto;
   }
 `;
