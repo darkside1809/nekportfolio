@@ -13,7 +13,7 @@ const Hero = (props) => (
           My Portfolio
         </SectionTitle>
         <SectionText>Back-end Developer</SectionText>
-        <a href="https://darkside1809.github.io/portfolio/" target="_blank">
+        <a href="https://darkside1809.github.io/resume/" target="_blank">
           <Button onClick={props.handleClick}>Download CV</Button>
         </a>
       </LeftSection>

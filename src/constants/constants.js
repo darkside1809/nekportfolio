@@ -48,15 +48,6 @@ export const projects = [
     source: "https://github.com/darkside1809/bookings",
     id: 3,
   },
-  {
-    title: "Amazon",
-    description: "Made this little web page to learn new CSS framework - Tailwind CSS",
-    image: "/images/Amazon.png",
-    tags: ["HTML", "CSS/Tailwind CSS"],
-    source: "https://github.com/darkside1809/amazon",
-    visit: "https://darkside1809.github.io/amazon",
-    id: 0,
-  },
 ];
 
 export const TimeLineData = [
